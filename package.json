@@ -1,0 +1,22 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "FEM project with SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinorue/Sunnyside-agency-landing-page.git"
+  },
+  "author": "Martín Orue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinorue/Sunnyside-agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/martinorue/Sunnyside-agency-landing-page#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
