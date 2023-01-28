@@ -1,1 +1,10 @@
-@forward 'base/reset';
+/*abstracts*/
+@use 'abstracts/variables';
+
+/*base*/
+@use 'base/reset';
+
+/*layout*/
+@use 'layout/header';
+
+/*components*/
