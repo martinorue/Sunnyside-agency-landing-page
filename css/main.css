@@ -1,18 +1,75 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     background-color: $dark-moderate-cyan;
- *   |                       ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\_header.scss 4:23  @use
- *   scss\main.scss 8:1             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      background-color: $dark-moderate-cyan;\d\a   \2502                        ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 4:23  @use\a   scss\\main.scss 8:1             root stylesheet";
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0px;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizespeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  font-size: 62.5%;
+  background-color: red;
+}
+
+/*abstracts: como consejo traer siempre las variables primero*/
+.header {
+  background-color: hsl(168deg, 34%, 41%);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+/*base*/
+/*layout*/
+/*components*/

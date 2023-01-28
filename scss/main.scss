@@ -1,10 +1,9 @@
-/*abstracts*/
-@use 'abstracts/variables';
+
 
 /*base*/
-@use 'base/reset';
+@forward 'base/reset';
 
 /*layout*/
-@use 'layout/header';
+@forward 'layout/header';
 
 /*components*/

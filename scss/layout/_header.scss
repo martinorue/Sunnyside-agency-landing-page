@@ -1,5 +1,11 @@
+@use'../abstracts/' as *;
 
 
 .header{
-    background-color: $dark-moderate-cyan;
+    background-image: url("/images/desktop/image-header.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
 }
