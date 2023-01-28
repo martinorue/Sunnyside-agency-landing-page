@@ -4,7 +4,16 @@
   "description": "FEM project with SASS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:scss": "sass  --no-source-map scss/main.scss:css/main.css",
+    "copy:html": "copyfiles *.html .",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:html": "onchange '*.html' -- npm run copy:html",
+    "watch:scss": "sass  --no-source-map --watch scss/main.scss:css/main.css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "vite",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:html build:* && npm run postbuild",
+    "postbuild": "postcss css/main.css -u autoprefixer cssnano -o css/main.min.css --no-map"
   },
   "repository": {
     "type": "git",
@@ -17,6 +26,13 @@
   },
   "homepage": "https://github.com/martinorue/Sunnyside-agency-landing-page#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "copyfiles": "^2.4.1",
+    "vite": "^4.0.4",
+    "cssnano": "^5.0.17",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.57.1"
   }
 }
