@@ -5,55 +5,67 @@ $font-barlow: 'Barlow', sans-serif;
 $font-fraunces: 'Fraunces', serif;
 
 body {
-    font-size: 1.8rem;
-    font-family: $font-barlow;
-  }
-  
-  // Headings
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $font-fraunces;
-    // font-weight: bold;
-    // line-height: 1.2;
-    // letter-spacing: 1px;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 5px;
-    color: $white;
-    line-height: 1.2;
-    margin: 45px 0 43px;
-  }
-  
-  h2 {
-    // font-size: 28px;
-  }
-  
-  h3 {
-    // font-size: 24px;
-  }
-  
-  // Body text
-  p {
-    // font-size: 16px;
-    // font-weight: normal;
-    // line-height: 1.5;
-    // letter-spacing: 1px;
-  }
-  
-  // Link styles
-  a {
-    // font-weight: bold;
-    // color: #333;
-    text-decoration: none;
-  }
-  
-  // List styles
-  ul, ol {
-    // font-size: 16px;
-    // font-weight: bold;
-    list-style-type: none;
-  }
+  font-size: 1.8rem;
+  font-family: $font-barlow;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-fraunces;
+  text-align: center;
+  // font-weight: bold;
+  // line-height: 1.2;
+  // letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 5px;
+  color: $white;
+  line-height: 1.2;
+  margin: 45px 0 43px;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h3 {
+  // font-size: 24px;
+}
+
+// Body text
+p {
+  text-align: center;
+  // font-size: 16px;
+  // font-weight: normal;
+  // line-height: 1.5;
+  // letter-spacing: 1px;
+}
+
+// Link styles
+a {
+  // font-weight: bold;
+  // color: #333;
+  text-align: center;
+}
+
+// List styles
+ul,
+ol {
+  // font-size: 16px;
+  // font-weight: bold;
+  list-style-type: none;
+}

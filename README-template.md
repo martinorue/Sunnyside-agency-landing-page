@@ -20,6 +20,8 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ## Overview
 
+This is my first project using SASS and I made a huge effort in order to follow the good practices, such using @forward and @use instead of @import (link a la doc.)
+
 FEEDBACK: hamburguer menu image background or in HTML?
 
 ### The challenge
