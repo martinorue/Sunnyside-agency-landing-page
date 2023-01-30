@@ -1,0 +1,19 @@
+.services-container {
+    &__graphic{
+        background-image: url("../../images/mobile/image-graphic-design.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.6rem;
+        padding: 50px 13px;
+    }
+    &__h2{
+        font-size: 2.8rem;
+    }
+    &__p{
+        margin: 35px 0px 0px;
+    }
+}
