@@ -78,6 +78,7 @@ h1 {
   letter-spacing: 5px;
   color: hsl(0deg, 0%, 100%);
   line-height: 1.2;
+  margin: 45px 0 43px;
 }
 
 a {
@@ -89,7 +90,8 @@ ul, ol {
 }
 
 .header {
-  background: url("/images/desktop/image-header.jpg") center/cover;
+  background: url("../../images/mobile/image-header.jpg") center/cover;
+  height: 78vh;
 }
 .header .header-content {
   display: flex;

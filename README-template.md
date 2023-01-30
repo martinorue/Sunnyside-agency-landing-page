@@ -63,14 +63,14 @@ This is my first project using Sass.
 ### What I learned
 
 - Sass
- - the use of @use and @forward instead of @import (deprecated)
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+ - The use of @use and @forward instead of @import (deprecated)
+- How to make an accessible modal menu hamburger style
+- I wasted a lot of time trying to adjust the background image for the header. Then I realized I was using the desktop image instead of the mobile one. The lesson to be learned is to always make sure you are using the right image and don't get stuck on a problem for hours, just move on with the rest.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+ARIA
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
