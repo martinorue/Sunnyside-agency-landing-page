@@ -34,6 +34,7 @@ body {
 
 a:not([class]) {
     text-decoration-skip-ink: auto;
+    text-decoration: none;
 }
 
 img,
@@ -60,6 +61,4 @@ picture {
 
 :root {
     font-size: 62.5%;
-
-    background-color: red;
 }

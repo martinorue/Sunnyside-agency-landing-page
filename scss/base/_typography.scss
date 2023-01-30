@@ -1,0 +1,58 @@
+@use '../abstracts/' as *;
+
+//typography
+$font-barlow: 'Barlow', sans-serif;
+$font-fraunces: 'Fraunces', serif;
+
+body {
+    font-size: 1.8rem;
+    font-family: $font-barlow;
+  }
+  
+  // Headings
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-fraunces;
+    // font-weight: bold;
+    // line-height: 1.2;
+    // letter-spacing: 1px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 5px;
+    color: $white;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    // font-size: 28px;
+  }
+  
+  h3 {
+    // font-size: 24px;
+  }
+  
+  // Body text
+  p {
+    // font-size: 16px;
+    // font-weight: normal;
+    // line-height: 1.5;
+    // letter-spacing: 1px;
+  }
+  
+  // Link styles
+  a {
+    // font-weight: bold;
+    // color: #333;
+    text-decoration: none;
+  }
+  
+  // List styles
+  ul, ol {
+    // font-size: 16px;
+    // font-weight: bold;
+    list-style-type: none;
+  }

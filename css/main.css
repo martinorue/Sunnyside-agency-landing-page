@@ -34,6 +34,7 @@ body {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 img,
@@ -57,19 +58,73 @@ picture {
 }
 :root {
   font-size: 62.5%;
-  background-color: red;
 }
 
 /*abstracts: como consejo traer siempre las variables primero*/
-.header {
-  background-image: url("/images/desktop/image-header.jpg");
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  min-height: 300px;
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
 }
 
-/*base*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", serif;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 5px;
+  color: hsl(0deg, 0%, 100%);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.header {
+  background: url("/images/desktop/image-header.jpg") center/cover;
+}
+.header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 2rem;
+}
+.header .hamburger-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header .mobile-menu {
+  display: none;
+}
+.header .mobile-menu.is-open {
+  position: absolute;
+  width: 80%;
+  top: 70px;
+  height: 210px;
+  padding: 19px;
+  left: 35px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.header .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*layout*/
 /*components*/

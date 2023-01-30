@@ -13,26 +13,42 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
     rel="stylesheet">
+  <script type="text/javascript" src="script.js" defer></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
 </head>
 
 <body>
   <header class="header">
-    <a href="/">
-      <img src="images/logo.svg" alt="Sunnyside logo">
-    </a>
-    <nav>
-      <i></i>
-    </nav>
+    <div class="header-content">
+      <a href="/">
+        <img src="images/logo.svg" alt="Sunnyside logo">
+      </a>
+      <div class="mobile-menu-container">
+        <nav id="navigation" class="nav">
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a href="">About</a></li>
+            <li class="mobile-menu__item"><a href="">Services</a></li>
+            <li class="mobile-menu__item"><a href="">Projects</a></li>
+            <li class="mobile-menu__item"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button aria-expanded="false" aria-controls="navigation" class="hamburger-button">
+        <img src="images/icon-hamburger.svg" alt="Open menu">
+      </button>
+    </div>
+    <section class="hero">
+      <h1>We are creatives</h1>
+      <img class="hero__arrow" src="images/icon-arrow-down.svg" alt="scroll down">
+    </section>
+
   </header>
 
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+
+
+
 
   Transform your brand
 
