@@ -160,8 +160,7 @@ ol {
   margin: 30px 0;
 }
 
-.services-container__graphic {
-  background-image: url("../../images/mobile/image-graphic-design.jpg");
+.services-container__graphic, .services-container__photography {
   background-repeat: no-repeat;
   background-size: cover;
   height: 84vh;
@@ -170,6 +169,14 @@ ol {
   justify-content: flex-end;
   font-size: 1.6rem;
   padding: 50px 13px;
+}
+.services-container__graphic {
+  background-image: url("../../images/mobile/image-graphic-design.jpg");
+  color: hsl(167deg, 40%, 24%);
+}
+.services-container__photography {
+  background-image: url("../../images/mobile/image-photography.jpg");
+  color: hsl(198deg, 62%, 26%);
 }
 .services-container__h2 {
   font-size: 2.8rem;

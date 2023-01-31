@@ -1,9 +1,9 @@
 // /*base*/
-@forward 'base/reset';
+@use 'base/reset';
 
 /*layout*/
-@forward 'layout/header';
+@use 'layout/header';
 
 /*components*/
-@forward 'components/about';
-@forward 'components/service';
+@use 'components/about';
+@use 'components/service';
