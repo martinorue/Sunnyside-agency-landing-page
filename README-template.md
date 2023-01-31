@@ -11,6 +11,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Questions](#questions)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -22,7 +23,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 This is my first project using SASS and I made a huge effort in order to follow the good practices, such using @forward and @use instead of @import (link a la doc.)
 
-FEEDBACK: hamburguer menu image background or in HTML?
+
 
 ### The challenge
 
@@ -68,6 +69,11 @@ This is my first project using Sass.
  - The use of @use and @forward instead of @import (deprecated)
 - How to make an accessible modal menu hamburger style
 - I wasted a lot of time trying to adjust the background image for the header. Then I realized I was using the desktop image instead of the mobile one. The lesson to be learned is to always make sure you are using the right image and don't get stuck on a problem for hours, just move on with the rest.
+
+### Questions
+
+- When should I use background-image and when should I use <img>?
+- Why is it necessary to have @use'../base/' as * in the _header.scss and in the main.scss?
 
 ### Continued development
 

@@ -155,9 +155,11 @@ ol {
 }
 .about__text {
   padding: 22px;
+  color: hsl(232deg, 10%, 55%);
 }
 .about__h2 {
   margin: 30px 0;
+  color: hsl(212deg, 27%, 19%);
 }
 
 .services-container__graphic, .services-container__photography {
@@ -183,6 +185,38 @@ ol {
 }
 .services-container__p {
   margin: 35px 0px 0px;
+}
+
+.testimonials__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  color: hsl(210deg, 4%, 67%);
+  margin: 60px 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial__img {
+  border-radius: 50%;
+  width: 65px;
+}
+.testimonial__body {
+  color: hsl(213deg, 9%, 39%);
+  margin: 30px 0;
+}
+.testimonial__name {
+  color: hsl(212deg, 27%, 19%);
+  font-weight: 900;
+}
+.testimonial__role {
+  color: hsl(210deg, 4%, 67%);
+  font-size: 1.4rem;
 }
 
 /*layout*/
