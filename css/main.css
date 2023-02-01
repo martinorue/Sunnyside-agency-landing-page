@@ -153,6 +153,24 @@ ol {
 .footer__logo-container {
   display: flex;
   justify-content: center;
+  padding: 50px 0 20px;
+}
+.footer__logo-container .footer__logo {
+  width: 170px;
+}
+.footer__links {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  color: hsl(168deg, 34%, 41%);
+  font-size: 2rem;
+  margin: 15px 8px 15px;
+}
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 60px;
 }
 
 .about .a-container {

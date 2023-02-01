@@ -1,11 +1,32 @@
 @use'../abstracts/' as *;
 @use'../base/' as *;
 
-.footer{
+.footer {
     background-color: hsl(165deg 43% 71%);
 
-    &__logo-container{
+    &__logo-container {
         display: flex;
         justify-content: center;
+        padding: 50px 0 20px;
+
+        .footer__logo {
+            width: 170px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        padding: 0;
+        justify-content: space-around;
+        color: $dark-moderate-cyan;
+        font-size: 2rem;
+        margin: 15px 8px 15px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding: 60px;
     }
 }
