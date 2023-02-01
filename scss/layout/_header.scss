@@ -21,15 +21,32 @@
 
     .mobile-menu {
         display: none;
+
+        &__item a {
+            color: $dark-grayish-blue;
+            font-family: $font-barlow;
+            font-size: 2rem;
+        }
+
+        .mobile-menu__item:last-child a{
+            color: hsl(212deg, 27%, 19%);
+            font-family: "Fraunces", serif;
+            text-transform: uppercase;
+            font-size: 1.7rem;
+            padding: 15px 25px;
+            border-radius: 50px;
+            background-color: $yellow;
+        }
+
     }
 
     .mobile-menu.is-open {
         position: absolute;
-        width: 80%;
-        top: 70px;
-        height: 210px;
-        padding: 19px;
-        left: 35px;
+        width: 90%;
+        top: 90px;
+        height: 315px;
+        padding: 0;
+        left: 18px;
         bottom: 0;
         display: flex;
         align-items: center;
@@ -53,8 +70,7 @@
         flex-direction: column;
         align-items: center;
 
-        .hero__arrow{
-        }
+        .hero__arrow {}
     }
 
 

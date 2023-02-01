@@ -126,13 +126,27 @@ ol {
 .header .mobile-menu {
   display: none;
 }
+.header .mobile-menu__item a {
+  color: hsl(232deg, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+}
+.header .mobile-menu .mobile-menu__item:last-child a {
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: hsl(51deg, 100%, 49%);
+}
 .header .mobile-menu.is-open {
   position: absolute;
-  width: 80%;
-  top: 70px;
-  height: 210px;
-  padding: 19px;
-  left: 35px;
+  width: 90%;
+  top: 90px;
+  height: 315px;
+  padding: 0;
+  left: 18px;
   bottom: 0;
   display: flex;
   align-items: center;
