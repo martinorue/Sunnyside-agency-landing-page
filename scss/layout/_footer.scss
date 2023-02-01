@@ -1,0 +1,11 @@
+@use'../abstracts/' as *;
+@use'../base/' as *;
+
+.footer{
+    background-color: hsl(165deg 43% 71%);
+
+    &__logo-container{
+        display: flex;
+        justify-content: center;
+    }
+}

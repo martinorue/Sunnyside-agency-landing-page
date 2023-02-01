@@ -147,6 +147,14 @@ ol {
   flex-direction: column;
   align-items: center;
 }
+.footer {
+  background-color: hsl(165deg, 43%, 71%);
+}
+.footer__logo-container {
+  display: flex;
+  justify-content: center;
+}
+
 .about .a-container {
   text-align: center;
   margin: 25px 0 30px;
@@ -223,5 +231,8 @@ ol {
   margin: 8px 0px 60px;
 }
 
-/*layout*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} /*layout*/
 /*components*/

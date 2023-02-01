@@ -3,8 +3,11 @@
 
 /*layout*/
 @use 'layout/header';
+@use 'layout/footer';
 
 /*components*/
 @use 'components/about';
 @use 'components/service';
 @use 'components/testimonial';
+@use 'components/gallery';
+
