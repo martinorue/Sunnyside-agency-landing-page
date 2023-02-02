@@ -161,6 +161,13 @@ ol {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (min-width: 48em) {
+  .header {
+    background-image: url("/images/desktop/image-header.jpg");
+    height: 50vh;
+  }
+}
+
 .footer {
   background-color: hsl(165deg, 43%, 71%);
 }
@@ -226,11 +233,44 @@ ol {
 .about .link--yellow::after {
   background-color: hsl(51deg, 100%, 49%);
 }
+@media only screen and (min-width: 48em) {
+  .about section {
+    display: grid;
+    grid-template-areas: "a b";
+  }
+  .about section h2 {
+    margin: 0;
+  }
+  .about section p {
+    padding: 10px 14px 0px;
+  }
+  .about__text {
+    justify-content: flex-end;
+  }
+  .about .section--transform {
+    padding: 0;
+    margin: 0;
+    grid-area: a;
+  }
+  .about__img-transform {
+    grid-area: b;
+    max-width: 50vw;
+  }
+  .about__img-stand-out {
+    grid-area: a;
+    max-width: 50vw;
+  }
+  .about .section-stand-out {
+    padding: 0;
+    margin: 0;
+    grid-area: b;
+  }
+}
 
 .services-container__graphic, .services-container__photography {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 84vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

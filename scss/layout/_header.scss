@@ -73,5 +73,10 @@
         .hero__arrow {}
     }
 
+    @media only screen and (min-width: 48em){
+        background-image: url("/images/desktop/image-header.jpg");
+        height: 50vh;
+    }
+
 
 }

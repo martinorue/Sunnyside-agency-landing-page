@@ -1,6 +1,7 @@
 @use'../abstracts/' as *;
 
 .about {
+
     &__a-container {
         text-align: center;
         margin: 25px 0 30px;
@@ -39,12 +40,58 @@
         opacity: 0.3;
     }
 
-    
+
     .link--red::after {
         background-color: $soft-red;
     }
 
     .link--yellow::after {
         background-color: $yellow;
+    }
+
+
+    @media only screen and (min-width:48em) {
+        section {
+            display: grid;
+            grid-template-areas:
+                "a b";
+                h2{
+                    margin: 0;
+                }
+                p{
+                    padding: 10px 14px 0px;
+                }
+        }
+
+        &__text {
+            justify-content: flex-end;
+        }
+
+        .section--transform {
+            padding: 0;
+            margin:0;
+            grid-area: a;
+        }
+
+        &__img-transform {
+            grid-area: b;
+            max-width: 50vw;
+        }
+
+        &__img-stand-out {
+            grid-area: a;
+            max-width: 50vw;
+        }
+
+        .section-stand-out {
+            padding: 0;
+            margin:0;
+            grid-area: b;
+
+        }
+
+
+
+
     }
 }
