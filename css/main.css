@@ -187,7 +187,7 @@ ol {
   padding: 60px;
 }
 
-.about .a-container {
+.about__a-container {
   text-align: center;
   margin: 25px 0 30px;
   text-transform: uppercase;
@@ -196,10 +196,35 @@ ol {
 .about__text {
   padding: 22px;
   color: hsl(232deg, 10%, 55%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about__h2 {
   margin: 30px 0;
   color: hsl(212deg, 27%, 19%);
+}
+.about .learn-more {
+  color: hsl(212deg, 27%, 19%);
+  text-decoration: none;
+}
+.about .learn-more::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 11px;
+  position: relative;
+  top: -10px;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0.3;
+}
+.about .link--red::after {
+  background-color: hsl(7deg, 99%, 70%);
+}
+.about .link--yellow::after {
+  background-color: hsl(51deg, 100%, 49%);
 }
 
 .services-container__graphic, .services-container__photography {
