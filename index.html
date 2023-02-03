@@ -80,20 +80,25 @@
         </div>
       </section>
     </div>
-    <div class="sevices-container">
+    <div class="services-container">
       <section class="services-container__graphic">
-        <h2 class="services-container__h2">Graphic Design</h2>
-        <p class="services-container__p"> Great design makes you memorable. We deliver artwork that underscores your
-          brand message and captures
-          potential
-          clients’ attention.
-        </p>
+        <div class="services-text-container">
+          <h2 class="services-container__h2">Graphic Design</h2>
+          <p class="services-container__p"> Great design makes you memorable. We deliver artwork that underscores your
+            brand message and captures
+            potential
+            clients’ attention.
+          </p>
+        </div>
       </section>
       <section class="services-container__photography">
-        <h2 class="services-container__h2">Photography</h2>
-        <p class="services-container__p">
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </p>
+        <div class="services-text-container">
+          <h2 class="services-container__h2">Photography</h2>
+          <p class="services-container__p">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.
+          </p>
+        </div>
       </section>
     </div>
     <section class="testimonials">
@@ -127,10 +132,22 @@
       </article>
     </section>
     <section class="gallery">
-      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
-      <img src="images/mobile/image-gallery-orange.jpg" alt="">
-      <img src="images/mobile/image-gallery-cone.jpg" alt="">
-      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images\desktop\image-gallery-milkbottles.jpg">
+        <img class="gallery__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images\desktop\image-gallery-orange.jpg">
+        <img class="gallery__img" src="images/mobile/image-gallery-orange.jpg" alt="">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images\desktop\image-gallery-cone.jpg">
+        <img class="gallery__img" src="images/mobile/image-gallery-cone.jpg" alt="">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images\desktop\image-gallery-sugarcubes.jpg">
+        <img class="gallery__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      </picture>
     </section>
   </main>
   <footer class="footer">

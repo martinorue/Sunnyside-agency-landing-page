@@ -40,4 +40,19 @@
             margin: 8px 0px 60px;
         }
     }
+
+    @media only screen and (min-width: 48em) {
+        display: grid;
+        grid-template-areas: 
+        "a a a"
+        "b c d";
+        column-gap: 25px;
+
+        .testimonials__title {
+            grid-area: a;
+        }
+
+   
+
+    }
 }

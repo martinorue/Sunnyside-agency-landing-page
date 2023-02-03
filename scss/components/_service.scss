@@ -1,30 +1,55 @@
 @use'../abstracts/' as *;
 
 .services-container {
-    &__graphic, &__photography{
+    &__graphic,
+    &__photography {
         background-repeat: no-repeat;
         background-size: cover;
         height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         padding: 50px 13px;
     }
-    &__graphic{
+
+    &__graphic {
         background-image: url("../../images/mobile/image-graphic-design.jpg");
         color: $dark-desaturated-cyan;
     }
 
-    &__photography{
+    &__photography {
         background-image: url("../../images/mobile/image-photography.jpg");
         color: $dark-blue;
     }
 
-    &__h2{
+    &__h2 {
         font-size: 2.8rem;
     }
-    &__p{
+
+    &__p {
         margin: 35px 0px 0px;
+    }
+
+    @media only screen and (min-width: 48em) {
+        display: flex;
+        .services-text-container{
+            padding: 15px;
+        }
+
+        &__graphic {
+            background-image: url("../../images/desktop/image-graphic-design.jpg");
+        }
+
+        &__photography {
+            background-image: url("../../images/desktop/image-photography.jpg");
+        }
+
+        &__graphic,
+        &__photography {
+            width: 50vw;
+            height: 50vh;
+            background-position: center;
+        }
     }
 }

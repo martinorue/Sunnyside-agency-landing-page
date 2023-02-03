@@ -274,7 +274,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 50px 13px;
 }
 .services-container__graphic {
@@ -290,6 +290,25 @@ ol {
 }
 .services-container__p {
   margin: 35px 0px 0px;
+}
+@media only screen and (min-width: 48em) {
+  .services-container {
+    display: flex;
+  }
+  .services-container .services-text-container {
+    padding: 15px;
+  }
+  .services-container__graphic {
+    background-image: url("../../images/desktop/image-graphic-design.jpg");
+  }
+  .services-container__photography {
+    background-image: url("../../images/desktop/image-photography.jpg");
+  }
+  .services-container__graphic, .services-container__photography {
+    width: 50vw;
+    height: 50vh;
+    background-position: center;
+  }
 }
 
 .testimonials {
@@ -327,9 +346,27 @@ ol {
   margin-top: 8px;
   margin: 8px 0px 60px;
 }
+@media only screen and (min-width: 48em) {
+  .testimonials {
+    display: grid;
+    grid-template-areas: "a a a" "b c d";
+    column-gap: 25px;
+  }
+  .testimonials .testimonials__title {
+    grid-area: a;
+  }
+}
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-} /*layout*/
+}
+@media only screen and (min-width: 48em) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*layout*/
 /*components*/
