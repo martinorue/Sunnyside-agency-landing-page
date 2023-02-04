@@ -45,7 +45,6 @@
   </header>
   <main class="main">
     <div class="about">
-      <section class="about__section">
         <picture>
           <source media="(min-width: 1440px)" srcset="images\desktop\image-transform.jpg">
           <img class="about__img-transform" src="images/mobile/image-transform.jpg" alt="">
@@ -60,10 +59,8 @@
             <a class="learn-more link--yellow" href="">Learn more</a>
           </div>
         </div>
-      </section>
-      <section class="about__section">
         <picture>
-          <source>
+          <source media="(min-width: 1440px)" srcset="images\desktop\image-stand-out.jpg">
           <img class="about__img-stand-out" src="images/mobile/image-stand-out.jpg" alt="">
         </picture>
         <div class="about__text section-stand-out">
@@ -78,9 +75,12 @@
             <a class="learn-more link--red" href="">Learn more</a>
           </div>
         </div>
-      </section>
     </div>
-    <div class="services-container">
+    <picture>
+      <source>
+      <img class="about__img-stand-out" src="images/desktop/image-graphic-design.jpg" alt="">
+    </picture>
+    <!-- <div class="services-container">
       <section class="services-container__graphic">
         <div class="services-text-container">
           <h2 class="services-container__h2">Graphic Design</h2>
@@ -100,7 +100,7 @@
           </p>
         </div>
       </section>
-    </div>
+    </div> -->
     <section class="testimonials">
       <h3 class="testimonials__title">Client testimonials</h3>
       <article class="testimonial">

@@ -146,7 +146,10 @@ ol {
   top: 90px;
   height: 315px;
   padding: 0;
-  left: 18px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -250,36 +253,33 @@ ol {
   background-color: hsl(51deg, 100%, 49%);
 }
 @media only screen and (min-width: 48em) {
-  .about section {
+  .about {
     display: grid;
-    grid-template-areas: "a b";
+    grid-template-areas: "a b" "c d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .about section h2 {
+  .about * {
     margin: 0;
-  }
-  .about section p {
-    padding: 10px 14px 0px;
-  }
-  .about__text {
-    justify-content: flex-end;
+    padding: 0;
+    text-align: start;
   }
   .about .section--transform {
-    padding: 0;
-    margin: 0;
     grid-area: a;
   }
   .about__img-transform {
     grid-area: b;
-    max-width: 50vw;
   }
   .about__img-stand-out {
-    grid-area: a;
-    max-width: 50vw;
+    grid-area: c;
   }
   .about .section-stand-out {
-    padding: 0;
-    margin: 0;
-    grid-area: b;
+    grid-area: d;
+  }
+  .about__text {
+    padding: 20px;
+    align-items: start;
+    justify-content: space-around;
   }
 }
 
