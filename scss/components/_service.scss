@@ -1,26 +1,35 @@
 @use'../abstracts/' as *;
 
-.services-container {
-    &__graphic,
-    &__photography {
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        font-size: 1.5rem;
-        padding: 50px 13px;
-    }
+.services {
+    // position: absolute;
+    // &__graphic,
+    // &__photography {
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     height: 90vh;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-end;
+    //     font-size: 1.5rem;
+    //     padding: 50px 13px;
+    // }
 
-    &__graphic {
-        background-image: url("../../images/mobile/image-graphic-design.jpg");
+    &__graphic-design,
+    &__photography {
+        position: relative;
+    }
+    
+    &__graphic-design {
         color: $dark-desaturated-cyan;
     }
-
+    
     &__photography {
-        background-image: url("../../images/mobile/image-photography.jpg");
         color: $dark-blue;
+    }
+    
+    &__text-container{
+        position: absolute;
+        top: 65%;
     }
 
     &__h2 {
@@ -28,28 +37,31 @@
     }
 
     &__p {
-        margin: 35px 0px 0px;
+        margin-top: 35px;
+        font-size: 1.65rem;
+        padding: 0px 18px;
     }
 
-    @media only screen and (min-width: 48em) {
-        display: flex;
-        .services-text-container{
-            padding: 15px;
-        }
+    // @media only screen and (min-width: 48em) {
+    //     display: flex;
 
-        &__graphic {
-            background-image: url("../../images/desktop/image-graphic-design.jpg");
-        }
+    //     .services-text-container {
+    //         padding: 15px;
+    //     }
 
-        &__photography {
-            background-image: url("../../images/desktop/image-photography.jpg");
-        }
+    //     &__graphic {
+    //         background-image: url("../../images/desktop/image-graphic-design.jpg");
+    //     }
 
-        &__graphic,
-        &__photography {
-            width: 50vw;
-            height: 50vh;
-            background-position: center;
-        }
-    }
+    //     &__photography {
+    //         background-image: url("../../images/desktop/image-photography.jpg");
+    //     }
+
+    //     &__graphic,
+    //     &__photography {
+    //         width: 50vw;
+    //         height: 50vh;
+    //         background-position: center;
+    //     }
+    // }
 }

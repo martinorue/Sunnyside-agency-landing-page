@@ -234,6 +234,7 @@ ol {
 .about .learn-more {
   color: hsl(212deg, 27%, 19%);
   text-decoration: none;
+  font-size: 1.6rem;
 }
 .about .learn-more::after {
   content: "";
@@ -283,48 +284,26 @@ ol {
   }
 }
 
-.services-container__graphic, .services-container__photography {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  font-size: 1.5rem;
-  padding: 50px 13px;
+.services__graphic-design, .services__photography {
+  position: relative;
 }
-.services-container__graphic {
-  background-image: url("../../images/mobile/image-graphic-design.jpg");
+.services__graphic-design {
   color: hsl(167deg, 40%, 24%);
 }
-.services-container__photography {
-  background-image: url("../../images/mobile/image-photography.jpg");
+.services__photography {
   color: hsl(198deg, 62%, 26%);
 }
-.services-container__h2 {
+.services__text-container {
+  position: absolute;
+  top: 65%;
+}
+.services__h2 {
   font-size: 2.8rem;
 }
-.services-container__p {
-  margin: 35px 0px 0px;
-}
-@media only screen and (min-width: 48em) {
-  .services-container {
-    display: flex;
-  }
-  .services-container .services-text-container {
-    padding: 15px;
-  }
-  .services-container__graphic {
-    background-image: url("../../images/desktop/image-graphic-design.jpg");
-  }
-  .services-container__photography {
-    background-image: url("../../images/desktop/image-photography.jpg");
-  }
-  .services-container__graphic, .services-container__photography {
-    width: 50vw;
-    height: 50vh;
-    background-position: center;
-  }
+.services__p {
+  margin-top: 35px;
+  font-size: 1.65rem;
+  padding: 0px 18px;
 }
 
 .testimonials {

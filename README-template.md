@@ -69,6 +69,7 @@ This is my first project using Sass.
  - The use of @use and @forward instead of @import (deprecated)
 - How to make an accessible modal menu hamburger style
 - I wasted a lot of time trying to adjust the background image for the header. Then I realized I was using the desktop image instead of the mobile one. The lesson to be learned is to always make sure you are using the right image and don't get stuck on a problem for hours, just move on with the rest.
+- Absolute Positioning
 
 ### Questions
 
