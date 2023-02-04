@@ -1,18 +1,6 @@
 @use'../abstracts/' as *;
 
 .services {
-    // position: absolute;
-    // &__graphic,
-    // &__photography {
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     height: 90vh;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: flex-end;
-    //     font-size: 1.5rem;
-    //     padding: 50px 13px;
-    // }
 
     &__graphic-design,
     &__photography {
@@ -42,26 +30,9 @@
         padding: 0px 18px;
     }
 
-    // @media only screen and (min-width: 48em) {
-    //     display: flex;
+    @media only screen and (min-width: 48em) {
+        display: flex;
 
-    //     .services-text-container {
-    //         padding: 15px;
-    //     }
-
-    //     &__graphic {
-    //         background-image: url("../../images/desktop/image-graphic-design.jpg");
-    //     }
-
-    //     &__photography {
-    //         background-image: url("../../images/desktop/image-photography.jpg");
-    //     }
-
-    //     &__graphic,
-    //     &__photography {
-    //         width: 50vw;
-    //         height: 50vh;
-    //         background-position: center;
-    //     }
-    // }
+       
+    }
 }
