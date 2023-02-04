@@ -193,6 +193,22 @@ ol {
   gap: 32px;
   padding: 60px;
 }
+@media only screen and (min-width: 48em) {
+  .footer .footer__logo {
+    width: 135px;
+  }
+  .footer__links {
+    justify-content: center;
+    gap: 45px;
+    font-size: 1.5rem;
+  }
+  .footer .social-media {
+    gap: 20px;
+  }
+  .footer .social-media__img {
+    width: 15px;
+  }
+}
 
 .about__a-container {
   text-align: center;

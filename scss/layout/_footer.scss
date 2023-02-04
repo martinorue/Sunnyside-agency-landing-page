@@ -29,4 +29,25 @@
         gap: 32px;
         padding: 60px;
     }
+
+    @media only screen and (min-width: 48em) {
+        .footer__logo {
+            width: 135px;
+        }
+
+        &__links {
+            justify-content: center;
+            gap: 45px;
+            font-size: 1.5rem;
+        }
+
+        .social-media {
+            gap: 20px;
+
+            &__img {
+                width: 15px;
+            }
+        }
+
+    }
 }
