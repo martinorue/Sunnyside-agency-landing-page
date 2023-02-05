@@ -10,6 +10,10 @@
         letter-spacing: 5px;
         color: $grayish-blue;
         margin: 60px 0;
+
+        @media only screen and (min-width: 48em) {
+            font-size: 1.9rem;
+        }
     }
 
     .testimonial {
@@ -26,6 +30,7 @@
         &__body {
             color: $very-dark-grayish-blue;
             margin: 36px 0;
+            padding: 25px 47px;
         }
 
         &__name {
@@ -51,8 +56,5 @@
         .testimonials__title {
             grid-area: a;
         }
-
-   
-
     }
 }

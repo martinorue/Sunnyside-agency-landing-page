@@ -41,13 +41,34 @@
         opacity: 0.3;
     }
 
+    @keyframes widthAnimation  {
+        0% {
+            width: 0;
+          }
+          100% {
+            width: 100%;
+          }
+    }
 
     .link--red::after {
         background-color: $soft-red;
     }
 
+
+    .link--red:hover::after {
+        opacity: 1;
+        width: 100%;
+        animation: widthAnimation 0.2s ease-in-out;
+    }
+
     .link--yellow::after {
         background-color: $yellow;
+    }
+
+    .link--yellow:hover::after {
+        opacity: 1;
+        width: 100%;
+        animation: widthAnimation 0.2s ease-in-out;
     }
 
 
@@ -80,7 +101,7 @@
             grid-area: d;
         }
 
-        &__text{
+        &__text {
             padding: 20px;
             align-items: start;
             justify-content: space-around;
