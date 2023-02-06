@@ -98,7 +98,7 @@ ol {
 }
 
 .header {
-  background: url("../../images/mobile/image-header.jpg") center/cover;
+  background: url("../images/mobile/image-header.jpg") center/cover;
   height: 78vh;
 }
 .header .header-content {
