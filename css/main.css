@@ -200,6 +200,7 @@ ol {
   padding: 15px 25px;
   border-radius: 50px;
   background-color: hsl(0deg, 0%, 100%);
+  transition: all 0.2s ease-in-out;
 }
 .header .desktop-menu-container .desktop-menu__item:last-child a:hover {
   background-color: hsl(201deg, 97%, 74%);
@@ -260,6 +261,7 @@ ol {
 .footer__links li a:hover {
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .footer .social-media {
   display: flex;
@@ -267,13 +269,14 @@ ol {
   gap: 32px;
   padding: 60px;
 }
+.footer .social-media li:hover svg path {
+  fill: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 @media only screen and (min-width: 48em) {
   .footer .footer__logo {
     width: 135px;
-  }
-  .footer .footer__logo:hover {
-    color: hsl(0deg, 0%, 100%);
-    cursor: pointer;
   }
   .footer__links {
     justify-content: center;
@@ -282,10 +285,6 @@ ol {
   }
   .footer .social-media {
     gap: 20px;
-  }
-  .footer .social-media li:hover svg path {
-    fill: hsl(0deg, 0%, 100%);
-    cursor: pointer;
   }
 }
 .footer .attribution {

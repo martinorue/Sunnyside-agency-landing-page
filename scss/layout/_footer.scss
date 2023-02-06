@@ -31,6 +31,7 @@
     &__links li a:hover {
         color: $white;
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
     }
 
 
@@ -39,6 +40,12 @@
         justify-content: center;
         gap: 32px;
         padding: 60px;
+
+        li:hover svg path {
+            fill: $white;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
     }
 
 
@@ -46,11 +53,6 @@
     @media only screen and (min-width: 48em) {
         .footer__logo {
             width: 135px;
-        }
-
-        .footer__logo:hover {
-            color: $white;
-            cursor: pointer;
         }
 
         &__links {
@@ -62,10 +64,6 @@
         .social-media {
             gap: 20px;
 
-            li:hover svg path {
-                fill: $white;
-                cursor: pointer;
-            }
 
         }
 

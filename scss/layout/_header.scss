@@ -120,10 +120,12 @@
                 padding: 15px 25px;
                 border-radius: 50px;
                 background-color: $white;
+                transition: all 0.2s ease-in-out;
             }
-            &__item:last-child a:hover{
+
+            &__item:last-child a:hover {
                 background-color: hsl(201deg 97% 74%);
-                color: $white;  
+                color: $white;
             }
         }
 
