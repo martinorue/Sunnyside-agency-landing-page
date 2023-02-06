@@ -72,7 +72,7 @@ This is my first project using SASS. As it was going to be a bigger project, I w
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/martinorue)
+- Frontend Mentor - [@martinorue](https://www.frontendmentor.io/profile/martinorue)
 
 ## Acknowledgments
 
