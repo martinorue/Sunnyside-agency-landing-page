@@ -67,6 +67,14 @@
             background-color: $yellow;
         }
 
+        &::before {
+            content: "";
+            border-top: 20px solid transparent;
+            border-right: 20px solid white;
+            position: absolute;
+            top: -19px;
+            right: 0px;
+        }
     }
 
     .mobile-menu.is-open {
@@ -97,13 +105,7 @@
         }
     }
 
-    .arrow-left {
-        border-top: 20px solid transparent;
-        border-right: 20px solid white;
-        position: absolute;
-        top: -20px;
-        right: 0px;
-    }
+
 
     .desktop-menu-container {
         .desktop-menu {

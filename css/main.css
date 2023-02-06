@@ -155,6 +155,14 @@ ol {
   border-radius: 50px;
   background-color: hsl(51deg, 100%, 49%);
 }
+.header .mobile-menu::before {
+  content: "";
+  border-top: 20px solid transparent;
+  border-right: 20px solid white;
+  position: absolute;
+  top: -19px;
+  right: 0px;
+}
 .header .mobile-menu.is-open {
   position: absolute;
   width: 90%;
@@ -179,13 +187,6 @@ ol {
   .header .mobile-menu-container {
     display: none;
   }
-}
-.header .arrow-left {
-  border-top: 20px solid transparent;
-  border-right: 20px solid white;
-  position: absolute;
-  top: -20px;
-  right: 0px;
 }
 .header .desktop-menu-container .desktop-menu {
   display: flex;
