@@ -76,5 +76,5 @@ This is my first project using SASS. As it was going to be a bigger project, I w
 
 ## Acknowledgments
 
-[This](https://github.com/JuaniCaste23/Sunnyside-Landing-Page) repository from JuaniCaste23 gave me the idea of using absolute positioning for the Services section and to know how to apply hover on an SVG image.
+[This](https://github.com/joshuacba08/convirtiendo-un-proyecto-de-CSS-a-SASS) repository from Josué Oroya gave me the idea of using absolute positioning for the Services section and to know how to apply hover on an SVG image.
 Así que, si algún día lees esto, te mando un saludo desde Uruguay.
