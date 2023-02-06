@@ -23,8 +23,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 This is my first project using SASS and I made a huge effort in order to follow the good practices, such using @forward and @use instead of @import (link a la doc.)
 
-
-
 ### The challenge
 
 Users should be able to:
@@ -70,6 +68,7 @@ This is my first project using Sass.
 - How to make an accessible modal menu hamburger style
 - I wasted a lot of time trying to adjust the background image for the header. Then I realized I was using the desktop image instead of the mobile one. The lesson to be learned is to always make sure you are using the right image and don't get stuck on a problem for hours, just move on with the rest.
 - Absolute Positioning
+- How to change the fill attr of an SVG image
 
 ### Questions
 
