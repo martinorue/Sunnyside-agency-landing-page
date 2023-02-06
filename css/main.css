@@ -92,10 +92,6 @@ p {
   text-align: center;
 }
 
-a {
-  font-family: "Fraunces", serif;
-}
-
 ul,
 ol {
   list-style-type: none;
@@ -254,10 +250,16 @@ ol {
 .footer__links {
   display: flex;
   padding: 0;
-  justify-content: space-around;
-  color: hsl(168deg, 34%, 41%);
-  font-size: 2rem;
   margin: 15px 8px 15px;
+  justify-content: space-around;
+}
+.footer__links a {
+  color: hsl(168deg, 34%, 41%);
+  font-size: 1.5rem;
+}
+.footer__links li a:hover {
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
 }
 .footer .social-media {
   display: flex;
@@ -269,6 +271,10 @@ ol {
   .footer .footer__logo {
     width: 135px;
   }
+  .footer .footer__logo:hover {
+    color: hsl(0deg, 0%, 100%);
+    cursor: pointer;
+  }
   .footer__links {
     justify-content: center;
     gap: 45px;
@@ -277,8 +283,9 @@ ol {
   .footer .social-media {
     gap: 20px;
   }
-  .footer .social-media__img {
-    width: 15px;
+  .footer .social-media li:hover svg path {
+    fill: hsl(0deg, 0%, 100%);
+    cursor: pointer;
   }
 }
 .footer .attribution {
@@ -308,6 +315,7 @@ ol {
   color: hsl(212deg, 27%, 19%);
 }
 .about .learn-more {
+  font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
   text-decoration: none;
   font-size: 1.6rem;

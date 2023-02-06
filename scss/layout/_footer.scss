@@ -14,14 +14,25 @@
         }
     }
 
+
     &__links {
         display: flex;
         padding: 0;
-        justify-content: space-around;
-        color: $dark-moderate-cyan;
-        font-size: 2rem;
         margin: 15px 8px 15px;
+        justify-content: space-around;
     }
+
+    &__links a {
+        color: $dark-moderate-cyan;
+        font-size: 1.5rem;
+
+    }
+
+    &__links li a:hover {
+        color: $white;
+        cursor: pointer;
+    }
+
 
     .social-media {
         display: flex;
@@ -30,9 +41,16 @@
         padding: 60px;
     }
 
+
+
     @media only screen and (min-width: 48em) {
         .footer__logo {
             width: 135px;
+        }
+
+        .footer__logo:hover {
+            color: $white;
+            cursor: pointer;
         }
 
         &__links {
@@ -44,9 +62,11 @@
         .social-media {
             gap: 20px;
 
-            &__img {
-                width: 15px;
+            li:hover svg path {
+                fill: $white;
+                cursor: pointer;
             }
+
         }
 
     }

@@ -1,4 +1,5 @@
 @use'../abstracts/' as *;
+@use'../base/typography' as *;
 
 .about {
 
@@ -24,6 +25,7 @@
     }
 
     .learn-more {
+        font-family: $font-fraunces;
         color: $very-dark-desaturated-blue;
         text-decoration: none;
         font-size: 1.6rem;
