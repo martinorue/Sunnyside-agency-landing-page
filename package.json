@@ -12,8 +12,9 @@
     "watch": "npm-run-all --parallel watch:*",
     "serve": "vite",
     "start": "npm-run-all copy --parallel watch serve",
+    "copy:js": "copyfiles *.js dist",
     "build:vite": "vite build",
-    "build": "npm-run-all copy:html build:* build:vite && npm run postbuild",
+    "build": "npm-run-all copy:html copy:* build:* build:vite && npm run postbuild",
     "postbuild": "postcss css/main.css -u autoprefixer cssnano -o css/main.min.css --no-map"
   },
   "repository": {
